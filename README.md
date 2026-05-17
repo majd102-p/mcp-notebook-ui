@@ -1,70 +1,74 @@
-📓 Model Context Protocol (MCP) - Developer Reference Book
+![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
+![Vanilla JS](https://img.shields.io/badge/Vanilla-JavaScript-yellow.svg)
+![Vercel](https://img.shields.io/badge/deploy-Vercel-black.svg?logo=vercel)
+![Notion Ready](https://img.shields.io/badge/Notion-Embed%20Ready-blueviolet.svg)
+![Status](https://img.shields.io/badge/status-production--ready-brightgreen.svg)
 
-👤 Author: Majd Majdi Ayoub
+# 📓 Model Context Protocol (MCP) - Developer Reference Book
+👤 Author: Majd Majdi Ayoub  
+🔗 GitHub: @majd102-p  
+🤗 Hugging Face: @Ma120  
+💼 LinkedIn: Majd Ayoub  
 
-🤗 Hugging Face: @Ma120
+A single-page, responsive developer reference notebook for the Model Context Protocol (MCP). This project is styled with a dark developer documentation theme and is built with vanilla web technologies to remain fully functional and lightweight when nested inside a Notion /embed block or hosted statically.
 
-💼 LinkedIn: Majd Ayoub
+⚡ Live Demo: https://your-vercel-url.vercel.app
 
-An elite-grade, interactive, and production-oriented developer reference book designed for the Model Context Protocol (MCP). This self-contained single-page web documentation space is styled with modern dark-first developer platform cues (Stripe/Vercel style Docs) and is optimized for flawless nesting inside Notion Embeds via iframe as well as standalone hosting on Vercel.
+ Notion Integration
 
-🚀 Live Demos & Notion Integration
+This notebook is designed to adapt to constrained-width environments:
 
-Standard Standalone Deploy
+Deploy the index.html file to Vercel (or any static hosting provider).
 
-Deploy this repository to Vercel with a single click. No external routing, build steps, or complicated bundles are needed. The build compiles dynamically from index.html instantly.
+In your Notion workspace, create an /embed block.
 
-Notion Integration Guide
+Paste your live Vercel URL.
 
-This documentation has been engineered under strict layout constraint rules to remain 100% responsive and visually cohesive inside a Notion /embed block:
+Scale the block size—the layout collapses the sidebar automatically on narrower screens into a standard mobile menu to prevent scroll or overflow issues.
 
-Host your compiled index.html on Vercel (or any static host).
+✨ Features & Interactivity
 
-Inside your Notion workspace, type /embed.
+To keep the page responsive and avoid heavy third-party rendering packages (like Mermaid.js), all interactivity is implemented using standard, lightweight Vanilla JavaScript:
 
-Paste your live deployment URL.
+🔍 Local Search (Ctrl+K / ⌘K): A keyboard-accessible spotlight search that filters and links to text segments instantly.
 
-Scale the block to your preferred width—the fluid grid will automatically collapse the responsive sidebar into a modern hamburger menu, serving touch-friendly interactions dynamically.
+📂 Smart Sidebar: Automatically expands and highlights active chapters based on scroll position (Scrollspy).
 
-✨ Key Interactive Features
+💡 Explanatory Hover Tooltips: Contextual tooltips explaining technical terms (JSON-RPC, Roots, Sampling, stdio, realpath, FastMCP) on hover or touch.
 
-🔍 Ctrl+K / ⌘K Spotlight Search: An instantaneous, keyboard-accessible local search engine. Scans all headers, technical terms, and content segments instantly.
+🛠️ HTML/CSS System Simulators: Lightweight, non-blocking visual flow maps built with pure CSS and Tailwind classes:
 
-📂 Collapsible Smart Sidebar & Reading Progress: Grouped into collapsible categorized folders that expand dynamically via Scrollspy as you traverse the page, paired with a subtle, gradient-based reading progress bar.
+Protocol Simulator (Section 2): Visualizes packet flow steps from server to client and LLM.
 
-💡 "Explain on Hover" Tooltip Engine: Contextual hovering or tapping on highly technical terms (such as JSON-RPC, Roots, Sampling, stdio, realpath, and FastMCP) triggers responsive explanatory tooltips.
+Roots Validation Playground (Section 4.1): Simulates path validation and shows realpath traversal blocks.
 
-🛠️ Interactive CSS Animation Simulators (Pure HTML/CSS): Zero Mermaid.js dependency means no client-side lagging, instant loading, and seamless dark/light theme transitions.
+Handshake Timeline (Section 5.1): Staggered sequence layout showing handshake progression.
 
-Section 2 (Protocol Simulator): An active packet flow simulation displaying request transport, validation checks, and LLM text generation steps.
+Scaling Map (Section 10.1): Displays routing through load balancers and syncing state to Redis.
 
-Section 4.1 (Roots Boundary Sandbox): A live path directory traversal block visualizer. Toggle safe paths vs. malicious hacks (../../etc/passwd) to see realpath normalization in action.
-
-Section 5.1 (Handshake Sequence Player): A step-by-step chronologically staggered timeline player showing exact standard payloads.
-
-Section 10.1 (High-Availability Redis Sync Map): Visualizes client request routing through load balancers and syncing session parameters against Redis clusters.
+📋 Code Highlighting & Clipboard: Prism.js syntax highlighting with quick copy-to-clipboard buttons.
 
 📚 Technical Chapters Covered
 
-This developer reference book contains 100% lossless technical depth covering:
+The guide contains structured documentation on:
 
-Core Concepts & Definitions: Distinguishing between Protocol-level Sampling and LLM-level Decoding ($temperature$, $top\_p$).
+Core Concepts: Distinguishing between Protocol-level Sampling and LLM-level Decoding ($temperature$, $top\_p$).
 
-Sampling Architecture & Workflow: Step-by-step messaging loops and execution rules.
+Sampling Workflow: Execution loops and authorization boundaries.
 
-Benefits & Trade-offs of Delegated Sampling: Economic factors, safety layers, and server complexity reductions.
+Delegated Sampling Trade-offs: Economic factors, safety layers, and server complexity reductions.
 
-Roots & Filesystem Security: Canonical validation guidelines, directory traversal prevention, and comprehensive STRIDE Threat Modeling.
+Roots & Filesystem Security: Canonical validation guidelines, traversal prevention, and STRIDE Threat Modeling.
 
-JSON-RPC 2.0 Message Taxonomy: Separating academic representations from strict compliant production specs (tools/call, resources/read).
+JSON-RPC 2.0 message schemas: Separation of conceptual schemas from strict production standards.
 
-Handshake Lifecycle: Negotiation schemas, handshake progression rules, and capability exchange matrices.
+Handshake Lifecycle: Capabilities negotiation and sequence progression.
 
-Communication Transports: Same-machine stdio subprocess stream pipes vs. remote SSE/HTTP networks.
+Communication Transports: Same-machine stdio subprocess stream pipes vs. remote networks.
 
 Deep Dive Streamable HTTP: Session ID rules, persistent SSE channels, and stateless FastMCP deployments.
 
-Decision Matrix: Practical trade-offs, advantages, and transport choice matrices.
+Decision Matrix: Practical transport choice matrices.
 
 HA Production Scaling: Load balancing desynchronization issues and shared caching (Redis) architectures.
 
@@ -74,7 +78,7 @@ Recommended Production Stack: Minimalist ASGI (Uvicorn), Fargate, Redis, and Ope
 
 💻 Running Locally
 
-Since the application is fully self-contained, you do not need to install complex local node-packages or setup build toolchains:
+Since the application is fully self-contained, no external local packages or node build setups are required:
 
 Clone the repository:
 
@@ -93,18 +97,16 @@ Navigate to http://localhost:8000.
 
 🛠️ Built With
 
-Tailwind CSS (Vercel-style, dark-first premium theme)
+Pure HTML5 & Vanilla JavaScript: Zero JS framework dependencies to guarantee low load times inside iframe containers.
 
-FontAwesome 6 (Pro-grade technical iconography)
+Tailwind CSS (Premium dark developer theme)
 
-Prism.js (SaaS syntax highlight wrapper)
+FontAwesome 6 (Technical SVG iconography)
 
-Inter & JetBrains Mono (Premium Google Fonts)
+Prism.js (Syntax highlighter)
 
-🤝 Contributing
-
-Contributions, architectural issue reports, and feature requests are welcome! Feel free to check the issues page if you want to collaborate on AI engineering systems and agentic protocols.
+Inter & JetBrains Mono (Google Fonts)
 
 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
