@@ -15,7 +15,7 @@ A single-page, responsive developer reference notebook for the Model Context Pro
 ⚡ Live Demo: [https://mcp-notebook-ui-git-main-majd102-ps-projects.vercel.app](https://mcp-notebook-ui-git-main-majd102-ps-projects.vercel.app/)
 
 
- Notion: ([https://www.notion.so/Model-Context-Protocol-MCP-Developer-Notebook-363402a71ca08031a7c1cd4b4e17ff97?source=copy_link])
+ Notion: https://www.notion.so/Model-Context-Protocol-MCP-Developer-Notebook-363402a71ca08031a7c1cd4b4e17ff97?source=copy_link
 
 ✨ Features & Interactivity
 
