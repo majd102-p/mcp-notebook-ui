@@ -12,7 +12,7 @@
 
 A single-page, responsive developer reference notebook for the Model Context Protocol (MCP). This project is styled with a dark developer documentation theme and is built with vanilla web technologies to remain fully functional and lightweight when nested inside a Notion /embed block or hosted statically.
 
-⚡ Live Demo: https://your-vercel-url.vercel.app
+⚡ Live Demo: [https://your-vercel-url.vercel.app](https://mcp-notebook-ui-git-main-majd102-ps-projects.vercel.app/)
 
  Notion Integration
 
