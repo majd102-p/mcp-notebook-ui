@@ -14,21 +14,10 @@ A single-page, responsive developer reference notebook for the Model Context Pro
 
 ⚡ Live Demo: [https://mcp-notebook-ui-git-main-majd102-ps-projects.vercel.app](https://mcp-notebook-ui-git-main-majd102-ps-projects.vercel.app/)
 
- Notion Integration
 
-This notebook is designed to adapt to constrained-width environments:
-
-Deploy the index.html file to Vercel (or any static hosting provider).
-
-In your Notion workspace, create an /embed block.
-
-Paste your live Vercel URL.
-
-Scale the block size—the layout collapses the sidebar automatically on narrower screens into a standard mobile menu to prevent scroll or overflow issues.
+ Notion: ([https://www.notion.so/Model-Context-Protocol-MCP-Developer-Notebook-363402a71ca08031a7c1cd4b4e17ff97?source=copy_link])
 
 ✨ Features & Interactivity
-
-To keep the page responsive and avoid heavy third-party rendering packages (like Mermaid.js), all interactivity is implemented using standard, lightweight Vanilla JavaScript:
 
 🔍 Local Search (Ctrl+K / ⌘K): A keyboard-accessible spotlight search that filters and links to text segments instantly.
 
