@@ -1,7 +1,7 @@
 ![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Vanilla JS](https://img.shields.io/badge/Vanilla-JavaScript-yellow.svg)
 ![Vercel](https://img.shields.io/badge/deploy-Vercel-black.svg?logo=vercel)
-![Notion Ready](https://img.shields.io/badge/Notion-Embed%20Ready-blueviolet.svg)
+![Notion Ready](https://img.shields.io/badge/Notion%20Ready-blueviolet.svg)
 ![Status](https://img.shields.io/badge/status-production--ready-brightgreen.svg)
 
 # 📓 Model Context Protocol (MCP) - Developer Reference Book
