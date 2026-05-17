@@ -71,7 +71,7 @@ Since the application is fully self-contained, no external local packages or nod
 
 Clone the repository:
 
-git clone https://github.com/majd102-p/your-repo-name.git
+git clone https://github.com/majd102-p/mcp-notebook-ui.git
 cd your-repo-name
 
 
